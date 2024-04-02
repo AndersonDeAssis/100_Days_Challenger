@@ -1,0 +1,120 @@
+*{
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+    font-family: 'Courier New', Courier, monospace;
+    font-weight: 600;
+}
+body{
+    background-color: rgb(38, 47, 74);
+}
+.square{
+    border-radius: 5px;
+    height: 400px;
+    width: 400px;
+    background: linear-gradient(45deg, #433DA0, #4DBEC7);
+    position: absolute;
+    left: 50%;
+    top:50%;
+
+    transform: translate(-50%, -50%);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+}
+
+.numberOneHundred{
+    display: flex;
+    flex-direction: row;
+    transform: translateY(10px);
+}
+
+.terminal{
+    position: relative;
+    left: 18px;
+    height: 40px;
+    width: 20px;
+    background-color: white;
+    border-radius: 5px;
+    box-shadow: 0px 0px 15px rgba(0, 0, 0, 0.252);
+
+    transform: rotate(40deg);
+    z-index: -1;
+}
+
+.one{
+    position: relative;
+    left:10px;
+    height: 100px;
+    width: 25px;
+    background-color: white;
+    border-radius: 5px;
+    box-shadow: 0px 0px 15px rgba(0, 0, 0, 0.252);
+
+    z-index: 2;
+}
+
+.zeroOne{
+    position: relative;
+    right :2px;
+    height:100px;
+    width: 100px;
+    background-color: white;
+    border-radius: 50%;
+    box-shadow: 0px 0px 15px rgba(0, 0, 0, 0.252);
+
+    z-index: -1;
+}
+
+.zeroOne::after{
+    position: absolute;
+    content: ""; /*NÃO SE ESQUEÇA DE USAR O CONTENT PORQUE SENAO NAO APARECERA O AFTER NEM O BEFORE*/
+    height: 50px;
+    width: 50px;
+    background-color: #4981B5;
+    border-radius: 50%;
+    left: 25px;
+    top:25px;
+}
+
+.zeroTwo{
+    position: relative;
+    right: 20px;
+    height:100px;
+    width: 100px;
+    background-color: white;
+    border-radius: 50%;
+    box-shadow: 0px 0px 15px rgba(0, 0, 0, 0.252);
+
+    z-index: -2;
+}
+
+.zeroTwo::after{
+    position: absolute;
+    content: "";
+    height: 50px;
+    width: 50px;
+    border-radius: 50%;
+    left:25px;
+    top: 25px;
+    background-color: #5094BC;
+}
+
+.days{
+    position: relative;
+    color: white;
+    text-transform: uppercase;
+    font-size: 5em;
+
+    transform: translateY(5px);
+}
+
+.css{
+    position: relative;
+    color: white;
+    text-transform: uppercase;
+    font-size: 1.5em;
+
+    transform: translateY(-15px);
+}  
